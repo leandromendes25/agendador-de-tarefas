@@ -1,6 +1,6 @@
 package com.leandromendes25.agendador_de_tarefas.infrastructure.client;
 
-import com.leandromendes25.agendador_de_tarefas.dto.UsuarioDTO;
+import com.leandromendes25.agendador_de_tarefas.business.dto.UsuarioDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
