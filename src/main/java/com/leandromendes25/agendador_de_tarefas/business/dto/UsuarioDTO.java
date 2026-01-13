@@ -1,4 +1,4 @@
-package com.leandromendes25.agendador_de_tarefas.dto;
+package com.leandromendes25.agendador_de_tarefas.business.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,6 +1,6 @@
 package com.leandromendes25.agendador_de_tarefas.infrastructure.security;
 
-import com.leandromendes25.agendador_de_tarefas.dto.UsuarioDTO;
+import com.leandromendes25.agendador_de_tarefas.business.dto.UsuarioDTO;
 import com.leandromendes25.agendador_de_tarefas.infrastructure.client.UsuarioClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
