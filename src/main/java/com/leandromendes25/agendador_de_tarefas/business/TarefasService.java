@@ -30,7 +30,7 @@ public class TarefasService {
         return tarefaConverter.paraTarefaDTO(tarefasRepository.save(entity));
     }
     public List<TarefasDTO> buscaTarefaAgendadaPorPeriodo(LocalDateTime dataInicial, LocalDateTime dataFinal){
-    return tarefaConverter.paraListaTarefasDTO(tarefasRepository.findByDataEventoBetween(dataInicial, dataFinal));
+    return tarefaConverter.paraListaTarefasDTO(tarefasRepository.findByDataEventoBetweenAndStatusNotificacaoEnum(dataInicial, dataFinal, StatusNotificacaoEnum.PENDENTE));
     }
     public List<TarefasDTO> buscaTarefasPorEmail(String token){
         String email = jwtUtil.extractUsername(token.substring(7));
